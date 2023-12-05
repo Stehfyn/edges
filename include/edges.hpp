@@ -146,6 +146,9 @@ public:
                     return true;
                 }
             }
+            else if (_config.policy == sequence_policy::strict) {
+                current = 0;
+            }
         }
         return false;
     }
